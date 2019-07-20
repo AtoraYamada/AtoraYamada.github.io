@@ -40,7 +40,7 @@ height: 100vh;
   margin: 10px;
   border-radius: 4px;
   color: #fff;
-  background-color: rgb(84, 214, 84);
+  background-color: #93a160;
   text-decoration: none;
   letter-spacing: 1px;
   font-size: 1.0rem;
@@ -51,28 +51,30 @@ height: 100vh;
   text-decoration: underline;
 }
 
-.button-red {
-  background-color: #fc5252;
+.button-works {
+  background-color: #d5c78c;
 }
 
-.button-orange {
-  background-color: #f1b400;
+.button-contact {
+  background-color: #db5e68;
 }
 
 .about {
 height: 100vh;
-background-color: #ffffff;
-padding: 50px 30px;
-color: #333;  
+background-color: #93a160;
+padding: 50px 30px 0;
+color: #fff;  
 }
 
 .about-text {
-  width: 800px;
+  width: 810px;
   margin: 10px auto;
-  line-height: 2.5;
+  line-height: 2;
   text-align: left;
   display: inline-block;
   vertical-align: top;
+  color: #fff;
+  font-size: 0.9rem;
 }
 
 .bold{
@@ -82,7 +84,7 @@ color: #333;
 .profile-image{
   width: 350px;
   display: inline-block;
-  margin: 45px 30px 0;
+  margin: 15px 30px 0;
 }
 
 .heading {
@@ -96,7 +98,7 @@ color: #333;
 
 .works {
 height: 100vh;
-background-color: #383634;
+background-color: #d5c78c;
 padding: 80px 0 10px;
 }
 
@@ -104,16 +106,19 @@ padding: 80px 0 10px;
 display: flex;
 width: 860px;
 margin: 60px auto 0;
+justify-content: center;
 }
 
 .work-box {
 background-color: rgba(100, 100, 100, 0.3);
 border: 1px solid #333;
+height: 300px;
 }
 
 .work-image {
 display: block;
-width: 100%;
+width: 300px;
+object-fit: cover;
 }
 
 .work-description {
@@ -133,43 +138,16 @@ background-color: rgba(255, 255, 255, 0.15);
 
 .contact {
 height: 100vh;
-background-color: rgba(25, 25, 120, 0.9);
+background-color: rgba(220, 95, 105, 0.8);
 padding: 80px 0 150px;
 }
 
 
-.contact-form {
-width: 50%;
-margin: 50px auto 0;
-}
-
-.contact-form input[type=text], .contact-form textarea {
-display: block;
-width: 100%;
-margin-bottom: 10px;
-padding: 15px;
-outline: none;
-border: 1px solid rgba(255, 255, 255, 0.8);
-border-radius: 0;
-color: #333;
-}
-
-.contact-form textarea {
-height: 150px;
-}
-
-.contact-form input[type=submit] {
-display: block;
-width: 200px;
-margin: 40px auto 0;
-padding: 15px;
-border: 1px solid rgba(255, 255, 255, 0.8);
-border-radius: 5px;
-background-color: transparent;
-color: #fff;
-cursor: pointer;
-}
-
-.contact-form input[type=submit]:hover {
-background-color: rgba(255, 255, 255, 0.05);
+.contact-text{
+  width: 650px;
+  margin: 100px auto;
+  text-align: left;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  line-height: 2.5;
 }
