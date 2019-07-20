@@ -151,3 +151,24 @@ padding: 80px 0 150px;
   letter-spacing: 1px;
   line-height: 2.5;
 }
+
+#page-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 77%;
+}
+#page-top a {
+  background: #674935;
+  text-decoration: none;
+  color: #ccd273;
+  width: 80px;
+  padding: 30px 0;
+  text-align: center;
+  display: block;
+  border-radius: 5px;
+}
+#page-top a:hover {
+  text-decoration: none;
+  background: rgba(103, 73, 54, 0.8);
+}
