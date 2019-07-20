@@ -6,7 +6,7 @@ body {
   color: #fff;
   text-align: center;
   font-size: 0.8rem;
-  background: url('./images/mainback.jpeg') fixed;
+  background: url('images/mainback.jpeg') fixed;
   background-size: cover;
 }
 
