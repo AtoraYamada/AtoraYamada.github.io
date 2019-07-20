@@ -28,6 +28,7 @@ height: 100vh;
 }
 
 .site-description {
+  font-size: 1.2rem;
   margin-bottom: 50px;
   color: #fff;
 }
@@ -38,11 +39,12 @@ height: 100vh;
   padding: 20px;
   margin: 10px;
   border-radius: 4px;
-  background-color: #afa58d;
-  color: rgb(121, 238, 121);
+  color: #fff;
+  background-color: rgb(84, 214, 84);
   text-decoration: none;
   letter-spacing: 1px;
-  font-size: 0.7rem;
+  font-size: 1.0rem;
+  font-weight: bold;
 }
 
 .button:hover {
@@ -60,15 +62,27 @@ height: 100vh;
 .about {
 height: 100vh;
 background-color: #ffffff;
-padding: 80px 30px;
+padding: 50px 30px;
 color: #333;  
 }
 
 .about-text {
-  width: 600px;
-  margin: 30px auto;
+  width: 800px;
+  margin: 10px auto;
   line-height: 2.5;
   text-align: left;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.profile-image{
+  width: 350px;
+  display: inline-block;
+  margin: 45px 30px 0;
 }
 
 .heading {
