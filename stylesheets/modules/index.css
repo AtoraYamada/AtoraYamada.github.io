@@ -14,7 +14,6 @@ body {
 padding: 170px 30px 80px;
 height: 100vh;
 height: 100vh;
-background-color: rgba(25, 25, 120, 0.9);
 }
 
 .site-title-sub {
@@ -30,7 +29,7 @@ background-color: rgba(25, 25, 120, 0.9);
 
 .site-description {
   margin-bottom: 50px;
-  color: #888;
+  color: #fff;
 }
 
 .button {
@@ -40,14 +39,18 @@ background-color: rgba(25, 25, 120, 0.9);
   margin: 10px;
   border-radius: 4px;
   background-color: #afa58d;
-  color: #fff;
+  color: rgb(121, 238, 121);
   text-decoration: none;
   letter-spacing: 1px;
   font-size: 0.7rem;
 }
 
 .button:hover {
-  opacity: 0.9;
+  text-decoration: underline;
+}
+
+.button-red {
+  background-color: #fc5252;
 }
 
 .button-orange {
