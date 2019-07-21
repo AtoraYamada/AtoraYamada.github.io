@@ -1,0 +1,234 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  text-align: center;
+  font-size: 0.8rem;
+  background: url('images/index/chat_space.png') fixed;
+  background-size: cover;
+}
+
+.header {
+padding: 170px 30px 80px;
+height: 100vh;
+height: 100vh;
+}
+
+.site-title {
+  margin: 50px;
+  font-size: 4.5rem;
+  color: #495a5f;
+  font-weight: bold;
+  
+}
+
+.portfolio-link{
+  display: inline-block;
+  width: 300px;
+  padding: 20px;
+  margin: 10px 0 100px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #db4e11;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 1.0rem;
+  font-weight: bold;
+}
+
+.portfolio-link:hover{
+  text-decoration: underline;
+}
+
+.button {
+  display: inline-block;
+  width: 200px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #d35f22;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 1.0rem;
+  font-weight: bold;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button-works {
+  background-color: #fcd58c;
+}
+
+.button-contact {
+  background-color: #f18e4c;
+}
+
+.overview {
+height: 100vh;
+background-color: #e58022;
+padding: 50px 30px 0;
+color: #fff;  
+}
+
+.overview-text {
+  width: 900px;
+  margin: 10px auto;
+  line-height: 2;
+  text-align: left;
+  display: inline-block;
+  vertical-align: top;
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.overvoew-text__title{
+  font-weight: bold;
+  font-size: 2.0rem;
+  border-bottom: 3px solid #fff;
+  padding-bottom: 2px;
+}
+.bold{
+  font-weight: bold;
+}
+
+.heading {
+  display: inline-block;
+  margin: 30px 0 15px;
+  padding-bottom: 15px;
+  letter-spacing: 2px;
+  font-size: 4rem;
+  border-bottom: double 4px #fff;
+}
+
+.function {
+  height: 100vh;
+  background-color: #fcd58c;
+  padding: 80px 0 10px;
+  position: relative;
+}
+
+.function-wrapper {
+  display: flex;
+  width: 860px;
+  margin: 60px auto 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.function-image{
+  width: 750px;
+  border: 1px solid black;
+  margin-top: 30px;
+}
+
+.button-ghost {
+  width: 215px;
+  border: 2px solid #fff;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.contact {
+  height: 100vh;
+  background-color: #f18e4c;
+  padding: 80px 0 150px;
+}
+
+.contact-text{
+  width: 650px;
+  margin: 100px auto;
+  text-align: left;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  line-height: 2.5;
+}
+
+#page-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 77%;
+}
+#page-top a {
+  background: #674935;
+  text-decoration: none;
+  color: #ccd273;
+  width: 80px;
+  padding: 30px 0;
+  text-align: center;
+  display: block;
+  border-radius: 5px;
+}
+#page-top a:hover {
+  text-decoration: none;
+  background: rgba(103, 73, 54, 0.8);
+}
+
+
+#overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+  z-index: 1;
+}
+
+.modalWindow {
+  width: 800px;
+  margin: 0 auto;
+  position: absolute;
+  background-color: #FFF;
+  display: none; 
+  z-index: 2;
+  padding: 30px 20px;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #211715;
+  border-radius: 3px;
+  transition: .4s;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgba(33, 24, 21, 0.5);
+  color: #FFF;
+}
+
+.modal-title{
+  color: #495a5f;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.image-description{
+  color: #495a5f;
+  font-size: 1.2rem;
+}
+
+.modal-text{
+  text-align: left;
+  color: #495a5f;
+  font-size: 1.5rem;
+  margin-top: 30px;
+}
+
+.link{
+  text-decoration: none;
+  color: blue;
+}
+
+.link:hover{
+  text-decoration: underline;
+}

@@ -4,8 +4,143 @@
   <title>Chat-Space</title>
   <link rel="stylesheet" href="./stylesheets/reset.css">
   <link rel="stylesheet" href="./stylesheets/modules/chat_space.css">  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./javascript/chat_space.js"></script>
 </head>
 <body>
-  kkk
+  <div class="wrapper">
+    <header class="header">
+      <h1 class="site-title">Chat-Space</h1>
+      <a class="portfolio-link" href="http://3.113.93.153">JUMP TO "Chat-Space"</a>
+      <div class="buttons">
+        <a class="button" href="#overview">OVERVIEW</a>
+        <a class="button button-works" href="#function">FUNCTION</a>
+      </div>
+    </header>
+
+    <section class="overview" id="overview">
+      <h2 class="heading">OVERVIEW</h2>
+      <div class="overview-wrapper">
+        <pre class="overview-text">
+          <span class="overvoew-text__title">開発環境</span>
+          Haml・SCSS・Ruby・Ruby on Rails・JavaScript・jQuery・MySQL・Github・AWS
+
+          <span class="overvoew-text__title">開発期間と平均作業時間</span>
+          開発期間：約12日間
+          1日あたりの平均作業時間：約10時間
+          
+          <span class="overvoew-text__title">開発体制</span>
+          個人開発
+          Googleスプレッドシートによる進捗管理
+        </pre>
+      </div>
+      </section>
+    </section>
+
+    <section class="function" id="function">
+      <h2 class="heading">FUNCTION</h2>
+      <div class="function-wrapper">
+        <a href="#aa" class="button button-ghost" id="a"><span>サインアップ</span></a>
+        <a href="#bb" class="button button-ghost" id="b"><span>ログイン・ログアウト</span></a>
+        <a href="#cc" class="button button-ghost" id="c"><span>ユーザー情報編集</span></a>
+        <a href="#dd" class="button button-ghost" id="d"><span>グループ作成・編集</span></a>
+        <a href="#ee" class="button button-ghost" id="e"><span>メッセージ・画像投稿</span></a>
+        <a href="#ff" class="button button-ghost" id="f"><span>自動更新</span></a>
+      </div>
+    </section>
+    
+    <p id="page-top"><a href="#wrap">PAGE TOP</a></p>
+  </div>
+  <div id="overlay"></div>
+  <div class="modalWindow aa" id="aa">
+    <p class="modal-title">サインアップ</p>
+    <img class="function-image" src="./stylesheets/modules/images/chat_space/chat_signup.png" alt="サインアップ">
+    <p class="image-description">サインアップ画面</p>
+    <pre class="modal-text">
+      <a href="http://3.113.93.153/users/sign_up" class="link">http://3.113.93.153/users/sign_up</a>
+      ・gem "Devise"を用いたサインアップ機能
+      ・Nameがユーザー名として登録されます
+      ・Email・Passwordはログイン時に使用します
+    </pre>
+    <button class="close">Close</button>
+  </div>
+  <div class="modalWindow bb" id="bb">
+    <p class="modal-title">ログイン・ログアウト</p>
+    <img class="function-image" src="./stylesheets/modules/images/chat_space/login.png" alt="ログイン">
+    <p class="image-description">ログイン画面</p>
+    <img class="function-image" src="./stylesheets/modules/images/chat_space/gear-exp.jpg" alt="編集へ">
+    <p class="image-description">アカウント編集ページへ</p>
+    <img class="function-image" src="./stylesheets/modules/images/chat_space/edit_user.png" alt="ユーザー編集">
+    <p class="image-description">アカウント編集画面</p>
+    <pre class="modal-text">
+      <a href="http://3.113.93.153/users/sign_in" class="link">http://3.113.93.153/users/sign_in</a>
+      ・gem "Devise"を用いたログイン・ログアウト機能
+      ・登録したEmail・Passwordでログインできます
+      ・ログイン後、歯車マーク（画像の矢印が指しているマーク）を押すと、
+        アカウント編集ページへ遷移します
+      ・アカウント編集ページで、ログアウトできます
+    </pre>
+    <button class="close">Close</button>
+  </div>
+  <div class="modalWindow cc" id="cc">
+    <p class="modal-title">ユーザー情報編集</p>
+    <img class="function-image" src="./stylesheets/modules/images/chat_space/gear-exp.jpg" alt="編集へ">
+    <p class="image-description">アカウント編集ページへ</p>
+    <img class="function-image" src="./stylesheets/modules/images/chat_space/edit_user.png" alt="ユーザー編集">
+    <p class="image-description">アカウント編集画面</p>
+    <pre class="modal-text">
+      ・登録したアカウント情報の編集機能
+      ・ログイン後、歯車マーク（画像の矢印が指しているマーク）を押すと、
+        アカウント編集ページへ遷移します
+    </pre>
+    <button class="close">Close</button>
+  </div>
+  <div class="modalWindow dd" id="dd">
+    <p class="modal-title">グループ作成・編集</p>
+    <img class="function-image" src="./stylesheets/modules/images/chat_space/togroup.jpg" alt="グループ作成へ">
+    <p class="image-description">グループ作成ページへ</p>
+    <img src="https://i.gyazo.com/80161eff6a2aacc2c4bd8f4ad745cd8c.gif" class="function-image" alt="グループ作成">
+    <p class="image-description">グループ作成画面（インクリメンタルサーチ）</p>
+    <img class="function-image" src="./stylesheets/modules/images/chat_space/togroupedit.png" alt="グループ編集へ">
+    <p class="image-description">グループ編集ページへ</p>
+    <img class="function-image" src="./stylesheets/modules/images/chat_space/groupedit.png" alt="グループ編集">
+    <p class="image-description">グループ編集画面</p>
+    <pre class="modal-text">
+      ・グループ作成・編集機能
+      ・ログイン後、画像の矢印が指しているマークを押すと、
+        グループ作成ページへ遷移します
+      ・チャットメンバーはインクリメンタルサーチが可能です
+      ・トップページのサイドバーのグループ名をクリック後、ヘッダーの"Edit"ボタンから
+        グループ編集ページへ遷移します
+    </pre>
+    <button class="close">Close</button>
+  </div>
+  <div class="modalWindow ee" id="ee">
+    <p class="modal-title">メッセージ・画像投稿</p>
+    <img src="https://i.gyazo.com/e771113445d2a64798699105e1d22cd7.gif" class="function-image" alt="テキスト送信">
+    <p class="image-description">メッセージ送信</p>
+    <img src="https://i.gyazo.com/87f0a2a0b848721d0c1e1c90bcc17fe2.gif" class="function-image" alt="画像送信">
+    <p class="image-description">画像送信</p>
+    <pre class="modal-text">
+      ・非同期通信によるメッセージ投稿機能
+      ・ログイン後、トップページのサイドバーのグループ名をクリックすると、
+        グループチャットページへ遷移します
+      ・フッターの入力欄からメッセージの投稿が行えます
+      ・写真アイコンをクリックすることで、画像の投稿も可能です
+      ・投稿後、JSでAjaxを用いて非同期通信を行い、メッセージを画面に表示しています
+    </pre>
+    <button class="close">Close</button>
+  </div>
+  <div class="modalWindow ff" id="ff">
+    <p class="modal-title">自動更新</p>
+    <img src="https://i.gyazo.com/399caf0819ff3f4aafad34b25075ed7a.gif" class="function-image" alt="自動更新">
+    <p class="image-description">自動更新（左画面で入力したものが、右画面で自動的に反映される）</p>
+    <pre class="modal-text">
+      ・5秒ごとの自動更新機能
+      ・5秒ごとに最新のメッセージの有無を判断します
+      ・JSでAjaxを用いて非同期通信を行い、メッセージを画面に表示しています
+    </pre>
+    <button class="close">Close</button>
+  </div>
 </body>
 </html>
