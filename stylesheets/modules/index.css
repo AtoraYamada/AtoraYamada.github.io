@@ -147,6 +147,15 @@ color: #fff;
   line-height: 2.5;
 }
 
+.link-white{
+  color: #fff;
+  text-decoration: none;
+}
+
+.link-white:hover{
+  text-decoration: underline;
+}
+
 #page-top {
   position: fixed;
   bottom: 20px;

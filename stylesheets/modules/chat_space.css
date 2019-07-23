@@ -83,12 +83,12 @@ color: #fff;
   display: inline-block;
   vertical-align: top;
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
-.overvoew-text__title{
+.overview-text__title{
   font-weight: bold;
-  font-size: 2.0rem;
+  font-size: 1.7rem;
   border-bottom: 3px solid #fff;
   padding-bottom: 2px;
 }
