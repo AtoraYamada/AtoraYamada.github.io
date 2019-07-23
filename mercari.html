@@ -1,0 +1,197 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Clone-Site(mercari)</title>
+  <link rel="stylesheet" href="./stylesheets/reset.css">
+  <link rel="stylesheet" href="./stylesheets/modules/mercari.css">  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./javascript/mercari.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <h1 class="site-title">Clone-Site(mercari)</h1>
+      <a class="portfolio-link" href="http://52.199.29.90/">JUMP TO "Clone-Site"<br>(ID: hoge, PW: 1234)</a>
+      <div class="buttons">
+        <a class="button" href="#overview">OVERVIEW</a>
+        <a class="button button-works" href="#function">FUNCTION</a>
+      </div>
+      <a class="button button-top" href="https://atorayamada.github.io/AtoraYamada.github.io/">TO MAIN PAGE</a>
+    </header>
+
+    <section class="overview" id="overview">
+      <h2 class="heading">OVERVIEW</h2>
+      <div class="overview-wrapper">
+        <pre class="overview-text">
+          <span class="overview-text__title">アプリケーション概要</span>
+          メルカリのクローンサイト（登録・出品・購入まで一通り実装）
+
+          <span class="overview-text__title">開発環境</span>
+          Haml・SCSS・Ruby・Ruby on Rails・JavaScript・jQuery・MySQL・Github・AWS
+
+          <span class="overview-text__title">開発期間と平均作業時間</span>
+          開発期間：約4週間
+          1日あたりの平均作業時間：約10時間
+          
+          <span class="overview-text__title">開発体制</span>
+          アジャイル（スクラム）開発：スクラムマスター
+          チーム人数：6人（スクラムマスター含む）
+          Trelloによるタスク管理
+        </pre>
+      </div>
+      </section>
+    </section>
+
+    <section class="function" id="function">
+      <h2 class="heading">FUNCTION（担当箇所）</h2>
+      <div class="function-wrapper">
+        <a href="#aa" class="button button-ghost" id="a"><span>DB設計</span></a>
+        <a href="#bb" class="button button-ghost" id="b"><span>サインアップ</span></a>
+        <a href="#cc" class="button button-ghost" id="c"><span>ログイン・ログアウト</span></a>
+        <a href="#dd" class="button button-ghost" id="d"><span>カテゴリーデータ</span></a>
+        <a href="#ee" class="button button-ghost" id="e"><span>動的セレクトボックス</span></a>
+        <a href="#ff" class="button button-ghost" id="f"><span>画像プレビュー</span></a>
+        <a href="#gg" class="button button-ghost" id="g"><span>商品出品</span></a>
+        <a href="#hh" class="button button-ghost" id="h"><span>商品編集</span></a>
+      </div>
+      <span class="overview-text__title">機能確認後は、ログアウト処理をお願いします</span>
+    </section>
+    
+    <p id="page-top"><a href="#wrap">PAGE TOP</a></p>
+  </div>
+  <div id="overlay"></div>
+  <div class="modalWindow aa" id="aa">
+    <p class="modal-title">DB設計</p>
+    <img class="function-image" src="./stylesheets/modules/images/mercari/er.png" alt="ER図">
+    <p class="image-description">ER図</p>
+    <pre class="modal-text">
+      <a href="https://github.com/AtoraYamada/freemarket_sample_53b" class="link">https://github.com/AtoraYamada/freemarket_sample_53b</a>
+      ・詳細は上記リンクのREADMEをご参照下さい
+    </pre>
+    <button class="close">Close</button>
+  </div>
+  <div class="modalWindow bb" id="bb">
+    <p class="modal-title">サインアップ</p>
+    <img class="function-image" src="./stylesheets/modules/images/mercari/signup.png" alt="登録選択">
+    <p class="image-description">登録方法選択画面（「メールアドレスで登録」を選択して下さい）</p>
+    <img class="function-image" src="./stylesheets/modules/images/mercari/signup_eg.png" alt="バリデーション">
+    <p class="image-description">登録１ページ目（バリデーションによるエラーメッセージ）</p>
+    <pre class="modal-text">
+      <a href="http://52.199.29.90/signup" class="link">http://52.199.29.90/signup</a>
+      ・ウィザード形式のフォーム
+      ・メールアドレスによる登録が可能です
+      ・バリデーションによるエラーメッセージが表示されます
+      ・都道府県データはenumを使用しています
+      ・sessionを用いて情報は一括保存されます（支払い方法まで入力後、DBに保存）
+      ・登録完了後、gem "Devise"のメソッドにより、自動ログインします
+      ・ローカルでは、OmniAuthによるSNS認証も可能です
+      （SSL化・ドメイン取得で本番環境でも動くよう実装）
+      ※ロボット認証は未実装です
+      ※クレジットカード情報は以下の数値を入力して下さい（購入時にも必要です）
+      番号：4242424242424242
+      期限：未来の日付
+      セキュリティコード：任意の3桁の数字
+      <a href="https://atora1992.hatenablog.com/entry/2019/07/17/133106" class="link">関連ブログ記事</a>
+    </pre>
+    <button class="close">Close</button>
+  </div>
+  <div class="modalWindow cc" id="cc">
+    <p class="modal-title">ログイン・ログアウト</p>
+    <img class="function-image" src="./stylesheets/modules/images/mercari/login.png" alt="ログイン">
+    <p class="image-description">ログイン画面</p>
+    <img class="function-image" src="./stylesheets/modules/images/mercari/logout.png" alt="ログアウト">
+    <p class="image-description">ログアウト画面</p>
+    <pre class="modal-text">
+      <a href="http://52.199.29.90/users/sign_in" class="link">http://52.199.29.90/users/sign_in</a>
+      ・gem "Devise"を用いたログイン・ログアウト機能
+      ・登録したメールアドレス・PWによるログインが可能です
+      ・ログイン後、マイページの設定→ログアウトからログアウトページへ遷移できます
+      ・ローカルでは、SNS認証によるPW不要のログインが可能です
+      （SSL化・ドメイン取得で本番環境でも動くよう実装）
+      ※ロボット認証は未実装です
+    </pre>
+    <button class="close">Close</button>
+  </div>
+  <div class="modalWindow dd" id="dd">
+    <p class="modal-title">カテゴリーデータ</p>
+    <img src="https://i.gyazo.com/5f1a5c77f7de23adb1d8b45db66a2118.gif" class="function-image" alt="カテゴリーデータ">
+    <p class="image-description">カテゴリーデータ</p>
+    <pre class="modal-text">
+      ・gem "ancestry"を用いたカテゴリーデータ作成
+      <a href="https://atora1992.hatenablog.com/entry/2019/07/08/215444?_ga=2.238805312.1127791881.1563800013-1192814443.1557397135" class="link">関連ブログ記事１</a>
+      <a href="https://atora1992.hatenablog.com/entry/2019/07/08/215737?_ga=2.13287927.1127791881.1563800013-1192814443.1557397135" class="link">関連ブログ記事２</a>
+    </pre>
+    <button class="close">Close</button>
+  </div>
+  <div class="modalWindow ee" id="ee">
+    <p class="modal-title">動的セレクトボックス</p>
+    <img src="https://i.gyazo.com/9147bce319e416f44732257d63af46e0.gif" class="function-image" alt="服サイズ">
+    <p class="image-description">カテゴリー・サイズ選択（服サイズ）</p>
+    <img src="https://i.gyazo.com/86c17169bd400935037d5787243ed7a4.gif" class="function-image" alt="靴サイズ">
+    <p class="image-description">カテゴリー・サイズ選択（靴サイズ）</p>
+    <pre class="modal-text">
+      ・非同期通信による動的セレクトボックス
+      ・ログイン後、商品出品・編集画面でご覧いただけます
+      ・gem "ancestry"を導入し作成したカテゴリーデータを使用しています
+      ・項目を選択後、選択項目を取得し、JSでAjaxを用いて非同期通信を行います
+      ・選択項目と紐付くデータの取得、jbuilderでのjson成形後、
+        jsonを用いてセレクトボックスを作成しています
+      ・サイズが必要のないもの（e.g. テレビゲーム）はサイズ入力欄は生成されません
+      <a href="https://atora1992.hatenablog.com/entry/2019/07/17/140342?_ga=2.243310917.1127791881.1563800013-1192814443.1557397135" class="link">関連ブログ記事１</a>
+      <a href="https://atora1992.hatenablog.com/entry/2019/07/17/154613?_ga=2.243310917.1127791881.1563800013-1192814443.1557397135" class="link">関連ブログ記事２</a>
+    </pre>
+    <button class="close">Close</button>
+  </div>
+  <div class="modalWindow ff" id="ff">
+    <p class="modal-title">画像プレビュー</p>
+    <img src="https://i.gyazo.com/31bea66f731c1b37698236fb42b69550.gif" class="function-image" alt="画像アップロード">  
+    <p class="image-description">画像プレビュー（複数枚投稿可能）</p>
+    <pre class="modal-text">
+      ・file_fieldを用いた画像アップロード
+      ・Active Storageを使用しています
+      ・JSでアップロードファイルを取得し、プレビューを表示しています
+      ・exif.jsで画像の向きを取得し、表示方向を調整しています
+      ・「リセットアップロード」を押すことで、アップロードをリセットできます
+    </pre>
+    <button class="close">Close</button>
+  </div>
+  <div class="modalWindow gg" id="gg">
+    <p class="modal-title">商品出品</p>
+    <img class="function-image" src="./stylesheets/modules/images/mercari/list1.png" alt="出品上部">
+    <p class="image-description">商品出品（上部）</p>
+    <img class="function-image" src="./stylesheets/modules/images/mercari/list2.png" alt="出品下部">
+    <p class="image-description">商品出品（下部）</p>
+    <pre class="modal-text">
+      <a href="http://52.199.29.90/products/new" class="link">http://52.199.29.90/products/new</a>
+      ・ログイン後、上記リンクから商品出品ページへ遷移できます
+      ・全ての必須項目を入力していただくと、出品が可能です
+      ・バリデーションによるエラーメッセージが表示されます
+      ・任意項目のブランドの保存には、メソッド"find_or_create_by"を使用しています
+      ・ブランドテーブルに既存レコードがあれば、そのレコードを参照します
+        ない場合には、新たにレコードを作成します
+      ・出品者情報（ユーザーテーブルのid）も同時に保存されます
+    </pre>
+    <button class="close">Close</button>
+  </div>
+  <div class="modalWindow hh" id="hh">
+    <p class="modal-title">商品編集</p>
+    <img src="https://i.gyazo.com/399caf0819ff3f4aafad34b25075ed7a.gif" class="function-image" alt="自動更新">
+    <p class="image-description">自動更新（左画面で入力したものが、右画面で自動的に反映される）</p>
+    <pre class="modal-text">
+      <a href="http://52.199.29.90/products/new" class="link">http://52.199.29.90/products/new</a>
+      ・ログイン後、マイページの「出品した商品」をクリックし、商品を選択することで
+        商品編集ページへ遷移できます
+      ・画像の削除が可能です（JSを使用しています）
+        1.削除ボタンが押されたものを"display:hidden"にする
+        2.「更新する」を押した後、JS側でsubmitを一旦止める
+        3."display:hidden"になっている画像のidを取得し配列化
+        4.取得した画像idの配列をvalueとした"input"タグ（hidden)を生成する
+        5.生成後、本submit
+        6.コントローラで画像idの配列を取得し、そのidを元にDBから対象の画像を削除する
+      ・バリデーションによるエラーメッセージが表示されます
+      <a href="https://atora1992.hatenablog.com/entry/2019/07/10/201455?_ga=2.238585280.1127791881.1563800013-1192814443.1557397135" class="link">関連ブログ記事</a>
+    </pre>
+    <button class="close">Close</button>
+  </div>
+</body>
+</html>
