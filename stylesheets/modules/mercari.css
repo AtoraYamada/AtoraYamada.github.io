@@ -16,6 +16,7 @@ body:before{
 }
 
 body {
+  width: 100%;
   color: #fff;
   text-align: center;
   font-size: 0.8rem;
@@ -39,7 +40,7 @@ body {
 
 .portfolio-link{
   display: inline-block;
-  width: 300px;
+  width: 21%;
   padding: 20px;
   margin: 10px 0 100px;
   border-radius: 4px;
@@ -57,7 +58,7 @@ body {
 
 .button {
   display: inline-block;
-  width: 200px;
+  width: 16%;
   padding: 20px;
   margin: 10px;
   border-radius: 4px;
@@ -89,19 +90,19 @@ color: #fff;
 }
 
 .overview-text {
-  width: 900px;
+  width: 60%;
   margin: 10px auto;
   line-height: 2;
   text-align: left;
   display: inline-block;
   vertical-align: top;
   color: #fff;
-  font-size: 1.7rem;
+  font-size: calc(1.0rem + ((1vw - 0.64rem) * 1));
 }
 
 .overview-text__title{
   font-weight: bold;
-  font-size: 1.6rem;
+  font-size: calc(1.3rem + ((1vw - 0.64rem) * 1));
   border-bottom: 3px solid #fff;
   padding-bottom: 2px;
 }
@@ -127,7 +128,7 @@ color: #fff;
 
 .function-wrapper {
   display: flex;
-  width: 860px;
+  width: 50%;
   margin: 60px auto 0;
   justify-content: center;
   flex-wrap: wrap;
@@ -235,6 +236,7 @@ button:hover {
   color: #495a5f;
   font-size: 1.5rem;
   margin-top: 30px;
+  word-wrap: break-word;
 }
 
 .link{

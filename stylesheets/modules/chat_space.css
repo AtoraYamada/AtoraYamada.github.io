@@ -90,19 +90,19 @@ color: #fff;
 }
 
 .overview-text {
-  width: 80%;
+  width: 60%;
   margin: 10px auto;
   line-height: 2;
   text-align: left;
   display: inline-block;
   vertical-align: top;
   color: #fff;
-  font-size: 1.6rem;
+  font-size: calc(1.0rem + ((1vw - 0.64rem) * 1));
 }
 
 .overview-text__title{
   font-weight: bold;
-  font-size: 1.7rem;
+  font-size: calc(1.3rem + ((1vw - 0.64rem) * 1));
   border-bottom: 3px solid #fff;
   padding-bottom: 2px;
 }
@@ -235,6 +235,7 @@ button:hover {
   color: #495a5f;
   font-size: 1.5rem;
   margin-top: 30px;
+  word-wrap: break-word;
 }
 
 .link{
