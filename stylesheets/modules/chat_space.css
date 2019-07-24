@@ -13,6 +13,7 @@ body:before{
   height:100vh;
   background:url('images/index/chat_space.png') center no-repeat;
   background-size:cover;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
