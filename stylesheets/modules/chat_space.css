@@ -20,8 +20,6 @@ body {
   color: #fff;
   text-align: center;
   font-size: 0.8rem;
-  /* background: url('images/index/chat_space.png') fixed;
-  background-size: cover; */
   min-width: 960px;
 }
 
@@ -235,7 +233,6 @@ button:hover {
   color: #495a5f;
   font-size: 1.5rem;
   margin-top: 30px;
-  word-wrap: break-word;
 }
 
 .link{
