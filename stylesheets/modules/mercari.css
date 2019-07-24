@@ -11,8 +11,8 @@ body:before{
   z-index:-1;
   min-width: 100vw;
   height:100vh;
-  background:url('images/index/chat_space.png') center no-repeat;
-  background-size:cover;
+  background:url('images/mercari/mercari.png') center no-repeat;
+  background-size: cover;
 }
 
 body {
