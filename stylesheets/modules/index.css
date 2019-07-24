@@ -9,7 +9,8 @@ body:before{
   top:0;
   left:0;
   z-index:-1;
-  min-width: 100vw;
+  width: 100%;
+  min-width: 960px;
   height:100vh;
   background:url('images/index/backmain.jpeg') center no-repeat;
   background-size:cover;
