@@ -161,7 +161,7 @@ body {
   width: 45%;
   margin: 100px auto;
   text-align: left;
-  font-size: calc(1rem + ((1vw - 0.64rem) * 2.1429));
+  font-size: calc(1rem + ((1vw - 0.64rem) * 3));
   letter-spacing: 1px;
   line-height: 2.5;
 }
