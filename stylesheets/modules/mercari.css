@@ -245,3 +245,11 @@ button:hover {
 .link:hover{
   text-decoration: underline;
 }
+
+.caution{
+  text-align: left;
+  font-size: calc(1.0rem + ((1vw - 0.64rem) * 2));
+  margin: 20px 0 10px;
+  display: inline-block;
+  border-bottom: none;
+}
