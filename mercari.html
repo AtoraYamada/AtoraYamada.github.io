@@ -189,9 +189,9 @@
     <img class="function-image" src="./stylesheets/modules/images/mercari/edit2.png" alt="編集上部">
     <p class="image-description">商品編集（下部）</p>
     <pre class="modal-text">
-      <a href="http://52.199.29.90/products/new" class="link">http://52.199.29.90/products/new</a>
-      ・ログイン後、マイページの「出品した商品」をクリックし、
-        商品を選択することで商品編集ページへ遷移できます
+      ・ログイン後、マイページの「出品した商品-出品中-」をクリックし、
+        商品選択後のページで、「商品を編集」をクリックすると
+        商品編集ページへ遷移できます
       ・画像の削除が可能です（JSを使用しています）
         1.削除ボタンが押されたものを"display:hidden"にする
         2.「更新する」を押した後、JS側でsubmitを一旦止める
@@ -200,7 +200,7 @@
           "input"タグ（hidden)を生成する
         5.生成後、本submit
         6.コントローラで画像idの配列を取得し、
-          そのidを元にDBから対象の画像を削除する
+          そのidを元にDBから対象の画像の紐付けを削除する
       ・バリデーションによるエラーメッセージが表示されます
       <a href="https://atora1992.hatenablog.com/entry/2019/07/10/201455?_ga=2.238585280.1127791881.1563800013-1192814443.1557397135" class="link">関連ブログ記事</a>
     </pre>
